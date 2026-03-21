@@ -1,9 +1,19 @@
 'use client';
 
 import { useContent } from '../contexts/ContentContext';
+import { useEffect } from 'react';
 
 export default function HomePage() {
   const { changeContent, playAudio, swapStyleSheet } = useContent();
+
+  useEffect(() => {
+    // Jouer la musique de fond au chargement de la page
+    const backgroundAudio = document.getElementById('background') as HTMLAudioElement;
+    if (backgroundAudio) {
+      backgroundAudio.volume = 0.1; // Volume très faible
+      backgroundAudio.play().catch(e => console.log('Audio autoplay prevented:', e));
+    }
+  }, []);
 
   return (
     <div>
@@ -18,7 +28,13 @@ export default function HomePage() {
 
       <div id="center-all">
         <div className="style-banner">
-          <img src="https://brewtendonetwork.github.io/meta/images/3DS_Icon_Brew-1.png" width="150" alt="Brewtendo" />
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+              <img src="https://brewtendonetwork.github.io/meta/images/3DS_Icon_Brew-1.png" width="100" alt="Brewtendo" />
+              <h1 id="logo">Brewtendo</h1>
+            </div>
+            <p style={{ margin: '10px 0 0 0', fontSize: '14px', color: '#5e5c50' }}>The only official website for Brewtendo Network.</p>
+          </div>
         </div>
 
         <div id="center-div">
@@ -35,7 +51,7 @@ export default function HomePage() {
             </div>
             <div className="style-center-container">
               <div className="style-center-div-top">
-                <h4>Other Information:</h4>
+                <h4 style={{ fontWeight: 'normal' }}>Other Information:</h4>
                 <h4 style={{ fontSize: '14px', marginTop: '0px', bottom: '0px' }}>Learn how to install Badge Arcade on your 3DS</h4>
               </div>
               <div className="style-center-div-nocolor" id="float">
@@ -43,13 +59,8 @@ export default function HomePage() {
                   Badge Arcade guide
                 </div>
                 <hr style={{ width: '100%', marginTop: '25px' }} />
-              </div>
-            </div>
-            <div className="style-center-container">
-              <div className="style-center-div-top">
-                <h4 style={{ fontSize: '14px' }}>Wanna check out the progress on the site?<br />this should change as the site progresses until the eventual release later in (april)?</h4>
-              </div>
-              <div className="style-center-div-nocolor" id="float">
+                <h3>To start, install Badge Arcade from the eShop or hShop and update the game.</h3>
+                <h4 style={{ fontSize: '14px', marginTop: '25px' }}>Wanna check out the progress on the site?<br />this should change as the site progresses until the eventual release later in (april)?</h4>
                 <div className="pill-button" style={{ marginBottom: '15px' }} onClick={() => { changeContent('progress'); swapStyleSheet('/css/guide.css'); playAudio('decide'); }}>
                   Progress
                 </div>
@@ -57,7 +68,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="style-center-div" id="float">
+          <div className="style-center-div" id="float" style={{ marginTop: '-30px' }}>
             Brewtendo Description:
             <hr style={{ width: '100%' }} />
             Brewtendo is a Nintendo Network revival for the 3DS, it's not really trying to be a potential Pretendo rival, however. Instead it revives the things that they wouldn't add such as the eShop, Badge Arcade, Theme Shop, Spotpass, and Nintendo Video.
@@ -70,7 +81,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }

@@ -44,7 +44,10 @@ export default function RootLayout({
           </main>
           <Footer />
           <audio id="decide">
-            <source src="" type="audio/mp3" />
+            <source src="/audio/decide.mp3" type="audio/mp3" />
+          </audio>
+          <audio id="background" loop>
+            <source src="/audio/background.mp3" type="audio/mp3" />
           </audio>
         </ContentProvider>
       </body>

@@ -116,13 +116,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 40px;
+    min-height: 30px;
     flex-direction: column;
     color: white;
     white-space: normal;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    padding: 15px 10px 15px 10px;
+    padding: 10px 10px 10px 10px;
     border-bottom: 2px solid #bf6d8d;
     opacity: 1;
     z-index: 1;
@@ -136,6 +136,7 @@ body {
         text-align: center !important;
         width: 100%;
         display: block;
+        font-size: 16px;
     }
 
 @media (min-width: 800px) {
@@ -379,18 +380,35 @@ body {
         font-family: MarvelouzTubeFont3;
         color: white;
         width: 100vw;
-        height: 550px;
+        height: 200px;
         background-image: linear-gradient(to bottom, #ebb400, #ffb300);
         box-shadow: 10px 0px 15px rgba(0,0,0,0.2);
         opacity: 0.8;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
     }
 
         #footer p {
             position: relative;
-            top: 30px;
-            float: left;
+            top: 0px;
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        #footer .migration-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        #footer .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
         }
 
     .link {
