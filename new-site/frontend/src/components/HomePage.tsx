@@ -36,7 +36,7 @@ export default function HomePage() {
             <div className="style-center-container">
               <div className="style-center-div-top">
                 <h4>Other Information:</h4>
-                <h4 style={{ fontSize: '14px', marginTop: '5px' }}>Learn how to install Badge Arcade on your 3DS</h4>
+                <h4 style={{ fontSize: '14px', marginTop: '0px', bottom: '0px' }}>Learn how to install Badge Arcade on your 3DS</h4>
               </div>
               <div className="style-center-div-nocolor" id="float">
                 <div className="pill-button" onClick={() => { changeContent('badgearcade'); swapStyleSheet('/css/guide.css'); playAudio('decide'); }}>

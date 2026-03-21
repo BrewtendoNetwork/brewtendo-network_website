@@ -131,7 +131,7 @@ body {
 
     .style-center-div-top h4 {
         position: relative;
-        bottom: 25px;
+        bottom: 0px;
         margin: 0 auto;
         text-align: center !important;
         width: 100%;
