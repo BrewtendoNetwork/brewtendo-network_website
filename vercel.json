@@ -1,9 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "new-site/frontend/package.json",
-      "use": "@vercel/next"
-    }
-  ]
+  "buildCommand": "cd new-site/frontend && npm run build",
+  "outputDirectory": "new-site/frontend/.next",
+  "installCommand": "npm install"
 }
