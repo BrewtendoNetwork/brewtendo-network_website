@@ -1,6 +1,14 @@
 {
-  "buildCommand": "cd new-site/frontend && npm install && npm run build",
-  "outputDirectory": "new-site/frontend/.next",
-  "installCommand": "cd new-site/frontend && npm install",
-  "framework": "nextjs"
+  "builds": [
+    {
+      "src": "new-site/frontend/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "new-site/frontend/$1"
+    }
+  ]
 }
