@@ -9,10 +9,10 @@ export default function HomePage() {
     <div>
       <div className="navi-bar">
         <div id="center-navi">
-          <h4 onClick={() => { changeContent('home'); swapStyleSheet('/globals.css'); playAudio('decide'); }}>Brewtendo</h4>
-          <h4 onClick={() => { changeContent('guide'); swapStyleSheet('/guide.css'); playAudio('decide'); }}>Install Guide</h4>
-          <h4 onClick={() => { changeContent('badgearcade'); swapStyleSheet('/guide.css'); playAudio('decide'); }}>Badge Arcade</h4>
-          <h4 onClick={() => { changeContent('other'); swapStyleSheet('/globals.css'); playAudio('decide'); }} style={{ border: 'none' }}>Other Info</h4>
+          <h4 onClick={() => { changeContent('home'); swapStyleSheet('/css/main.css'); playAudio('decide'); }}>Brewtendo</h4>
+          <h4 onClick={() => { changeContent('guide'); swapStyleSheet('/css/guide.css'); playAudio('decide'); }}>Install Guide</h4>
+          <h4 onClick={() => { changeContent('badgearcade'); swapStyleSheet('/css/guide.css'); playAudio('decide'); }}>Badge Arcade</h4>
+          <h4 onClick={() => { changeContent('other'); swapStyleSheet('/css/main.css'); playAudio('decide'); }} style={{ border: 'none' }}>Other Info</h4>
         </div>
       </div>
 
@@ -28,7 +28,7 @@ export default function HomePage() {
                 <h4>Learn how to install Brewtendo on your 3DS!</h4>
               </div>
               <div className="style-center-div-nocolor" id="float">
-                <div className="pill-button" onClick={() => { changeContent('guide'); swapStyleSheet('/guide.css'); playAudio('decide'); }}>
+                <div className="pill-button" onClick={() => { changeContent('guide'); swapStyleSheet('/css/guide.css'); playAudio('decide'); }}>
                   Installation guide
                 </div>
               </div>
@@ -39,12 +39,12 @@ export default function HomePage() {
               </div>
               <div className="style-center-div-nocolor" id="float">
                 <h4>Learn how to install Badge Arcade on your 3DS</h4>
-                <div className="pill-button" onClick={() => { changeContent('badgearcade'); swapStyleSheet('/guide.css'); playAudio('decide'); }}>
+                <div className="pill-button" onClick={() => { changeContent('badgearcade'); swapStyleSheet('/css/guide.css'); playAudio('decide'); }}>
                   Badge Arcade guide
                 </div>
                 <hr style={{ width: '100%', marginTop: '25px' }} />
                 <h4>Wanna check out the progress on the site?<br />this should change as the site progresses until the eventual release later in (april)?</h4>
-                <div className="pill-button" style={{ marginBottom: '15px' }} onClick={() => { changeContent('progress'); swapStyleSheet('/guide.css'); playAudio('decide'); }}>
+                <div className="pill-button" style={{ marginBottom: '15px' }} onClick={() => { changeContent('progress'); swapStyleSheet('/css/guide.css'); playAudio('decide'); }}>
                   Progress
                 </div>
               </div>

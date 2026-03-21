@@ -34,7 +34,7 @@ export default function RootLayout({
       <head>
         <meta name="referrer" content="strict-origin-when-cross-origin" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link id="pagestyle" rel="stylesheet" href="/globals.css" />
+        <link id="pagestyle" rel="stylesheet" href="/css/main.css" />
         <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
       </head>
       <body className={inter.className}>

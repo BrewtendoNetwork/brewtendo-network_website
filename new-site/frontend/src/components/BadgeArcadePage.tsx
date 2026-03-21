@@ -9,10 +9,10 @@ export default function BadgeArcadePage() {
     <div>
       <div className="navi-bar">
         <div id="center-navi">
-          <h4 onClick={() => { changeContent('home'); swapStyleSheet('/globals.css'); playAudio('decide'); }}>Brewtendo</h4>
-          <h4 onClick={() => { changeContent('guide'); swapStyleSheet('/guide.css'); playAudio('decide'); }}>Install Guide</h4>
-          <h4 onClick={() => { changeContent('badgearcade'); swapStyleSheet('/guide.css'); playAudio('decide'); }}>Badge Arcade</h4>
-          <h4 onClick={() => { changeContent('other'); swapStyleSheet('/globals.css'); playAudio('decide'); }} style={{border: 'none'}}>Other Info</h4>
+          <h4 onClick={() => { changeContent('home'); swapStyleSheet('/css/main.css'); playAudio('decide'); }}>Brewtendo</h4>
+          <h4 onClick={() => { changeContent('guide'); swapStyleSheet('/css/guide.css'); playAudio('decide'); }}>Install Guide</h4>
+          <h4 onClick={() => { changeContent('badgearcade'); swapStyleSheet('/css/guide.css'); playAudio('decide'); }}>Badge Arcade</h4>
+          <h4 onClick={() => { changeContent('other'); swapStyleSheet('/css/main.css'); playAudio('decide'); }} style={{border: 'none'}}>Other Info</h4>
         </div>
       </div>
       <h1 id="header-guide-red">Setting up Badge Arcade:</h1>
@@ -31,7 +31,7 @@ export default function BadgeArcadePage() {
       <hr className="hide" />
       <hr className="hide" />
       <div id="center-div">
-        <div className="pill-button" onClick={() => { changeContent('home'); swapStyleSheet('/globals.css'); playAudio('decide'); }}>
+        <div className="pill-button" onClick={() => { changeContent('home'); swapStyleSheet('/css/main.css'); playAudio('decide'); }}>
           Home Page
         </div>
       </div>
