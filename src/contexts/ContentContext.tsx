@@ -21,16 +21,20 @@ export function ContentProvider({ children }: { children: ReactNode }) {
   };
 
   const playAudio = (audio: string) => {
-    const audioElement = document.getElementById(audio) as HTMLAudioElement;
-    if (audioElement) {
-      audioElement.play();
+    if (typeof window !== 'undefined') {
+      const audioElement = document.getElementById(audio) as HTMLAudioElement;
+      if (audioElement) {
+        audioElement.play();
+      }
     }
   };
 
   const swapStyleSheet = (sheet: string) => {
-    const link = document.getElementById('pagestyle') as HTMLLinkElement;
-    if (link) {
-      link.href = sheet;
+    if (typeof window !== 'undefined') {
+      const link = document.getElementById('pagestyle') as HTMLLinkElement;
+      if (link) {
+        link.href = sheet;
+      }
     }
   };
 
