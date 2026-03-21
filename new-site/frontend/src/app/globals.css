@@ -126,6 +126,7 @@ body {
     border-bottom: 2px solid #bf6d8d;
     opacity: 1;
     z-index: 1;
+    text-align: center;
 }
 
     .style-center-div-top h4 {
@@ -133,6 +134,7 @@ body {
         bottom: 0px;
         margin: 0;
         text-align: center;
+        width: 100%;
     }
 
 @media (min-width: 800px) {
