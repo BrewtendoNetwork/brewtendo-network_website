@@ -1,0 +1,13 @@
+{
+  "name": "brewtendo-monorepo",
+  "private": true,
+  "workspaces": ["frontend", "backend"],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint"
+  },
+  "devDependencies": {
+    "turbo": "^1.13.0"
+  }
+}
