@@ -25,7 +25,7 @@ export default function HomePage() {
           <div className="column">
             <div className="style-center-container">
               <div className="style-center-div-top">
-                <h4>Learn how to install Brewtendo on your 3DS!</h4>
+                <h4 style={{ textAlign: 'center' }}>Learn how to install Brewtendo on your 3DS!</h4>
               </div>
               <div className="style-center-div-nocolor" id="float">
                 <div className="pill-button" onClick={() => { changeContent('guide'); swapStyleSheet('/css/guide.css'); playAudio('decide'); }}>
