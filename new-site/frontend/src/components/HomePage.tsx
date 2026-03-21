@@ -36,14 +36,14 @@ export default function HomePage() {
             <div className="style-center-container">
               <div className="style-center-div-top">
                 <h4>Other Information:</h4>
+                <h4 style={{ fontSize: '14px', marginTop: '5px' }}>Learn how to install Badge Arcade on your 3DS</h4>
               </div>
               <div className="style-center-div-nocolor" id="float">
-                <h4>Learn how to install Badge Arcade on your 3DS</h4>
                 <div className="pill-button" onClick={() => { changeContent('badgearcade'); swapStyleSheet('/css/guide.css'); playAudio('decide'); }}>
                   Badge Arcade guide
                 </div>
                 <hr style={{ width: '100%', marginTop: '25px' }} />
-                <h4>Wanna check out the progress on the site?<br />this should change as the site progresses until the eventual release later in (april)?</h4>
+                <h4 style={{ fontSize: '14px' }}>Wanna check out the progress on the site?<br />this should change as the site progresses until the eventual release later in (april)?</h4>
                 <div className="pill-button" style={{ marginBottom: '15px' }} onClick={() => { changeContent('progress'); swapStyleSheet('/css/guide.css'); playAudio('decide'); }}>
                   Progress
                 </div>
