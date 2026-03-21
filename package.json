@@ -1,14 +1,11 @@
 {
   "name": "brewtendo-monorepo",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint"
+    "build": "cd new-site && npm install && npm run build",
+    "dev": "cd new-site && npm install && npm run dev",
+    "start": "cd new-site && npm install && npm run start",
+    "lint": "cd new-site && npm run lint"
   },
   "devDependencies": {
     "turbo": "^1.13.0"
