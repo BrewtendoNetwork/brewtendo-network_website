@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import HomePage from '../components/HomePage'
+import PageRenderer from '../components/PageRenderer'
 
 export default function Home() {
   const [isMounted, setIsMounted] = useState(false)
@@ -18,5 +18,5 @@ export default function Home() {
     )
   }
 
-  return <HomePage />
+  return <PageRenderer />
 }
