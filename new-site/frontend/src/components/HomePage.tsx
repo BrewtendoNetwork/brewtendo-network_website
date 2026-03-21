@@ -43,7 +43,13 @@ export default function HomePage() {
                   Badge Arcade guide
                 </div>
                 <hr style={{ width: '100%', marginTop: '25px' }} />
+              </div>
+            </div>
+            <div className="style-center-container">
+              <div className="style-center-div-top">
                 <h4 style={{ fontSize: '14px' }}>Wanna check out the progress on the site?<br />this should change as the site progresses until the eventual release later in (april)?</h4>
+              </div>
+              <div className="style-center-div-nocolor" id="float">
                 <div className="pill-button" style={{ marginBottom: '15px' }} onClick={() => { changeContent('progress'); swapStyleSheet('/css/guide.css'); playAudio('decide'); }}>
                   Progress
                 </div>
