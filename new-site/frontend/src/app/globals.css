@@ -343,10 +343,15 @@ body {
     font-size: 20px;
     cursor: pointer;
     text-align: center;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, background 0.2s ease;
     width: fit-content;
     min-width: 250px;
 }
+
+    .pill-button:hover {
+        background: linear-gradient(to bottom, #fff3b2 80%, #ffd966 100%);
+        color: #5e5c50;
+    }
 
     .pill-button:active {
         transform: scale(0.99);
