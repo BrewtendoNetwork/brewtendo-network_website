@@ -3,5 +3,5 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "installCommand": "npm install",
-  "rootDirectory": "new-site/frontend"
+  "rootDirectory": "new-site/
 }
